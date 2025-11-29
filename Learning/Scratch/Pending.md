@@ -1,0 +1,7 @@
+- [ ] Bit Manipulation
+- [ ] Patterns advanced
+- [ ] Regular expressions
+- [ ] Java
+- [ ] Design
+- [ ] Blender
+- [ ] 

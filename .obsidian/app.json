@@ -1,0 +1,35 @@
+{
+  "useTab": false,
+  "smartIndentList": true,
+  "spellcheckDictionary": [
+    "Thilagavathi",
+    "Adelson-Velsky",
+    "Landis",
+    "srimathi",
+    "Syedha",
+    "Heapify",
+    "pradeesh",
+    "Sathaiah",
+    "Leet",
+    "syedha",
+    "fevikwick",
+    "demat",
+    "Nilakottai",
+    "Kleene",
+    "Project_We",
+    "ollama",
+    "Langchain",
+    "dest",
+    "remerge",
+    "DataBases"
+  ],
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 100
+  }
+}
