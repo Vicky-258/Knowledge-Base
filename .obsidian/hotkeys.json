@@ -1,0 +1,20 @@
+{
+  "terminal:open-terminal.select.root": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "`"
+    }
+  ],
+  "terminal:close-terminal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "`"
+    }
+  ],
+  "terminal:find-in-terminal": []
+}

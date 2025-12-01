@@ -21,7 +21,8 @@
     "Langchain",
     "dest",
     "remerge",
-    "DataBases"
+    "DataBases",
+    "OOMKILL"
   ],
   "alwaysUpdateLinks": true,
   "promptDelete": false,

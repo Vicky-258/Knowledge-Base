@@ -1,6 +1,6 @@
 {
   "autorun": true,
-  "format": "MM-DD-YYYY",
+  "format": "YYYY-MM-DD",
   "folder": "Daily_Logs",
   "template": "Templates/DailyNotes"
 }
