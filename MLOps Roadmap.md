@@ -151,7 +151,6 @@ Deploy my Dockerized ML service to AWS using:
 
 
 ---
-
 #  **WEEK 6: Final Week — Full MLOps Infra Project**
 
 ###  Weekly Goal:

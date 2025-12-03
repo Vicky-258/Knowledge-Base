@@ -12,28 +12,29 @@ Understand HOW Prometheus thinks and get comfy with its UI.
 
 ### 🧠 What you learn:
 
-- What is a scrape target
+- ~~What is a scrape target~~ [[Prometheus#What is a scrape target|ans]]
     
-- Prometheus data model
+- ~~Prometheus data model~~ [[Prometheus#Prometheus Data Model|ans]]
     
-- Labels
+- ~~Labels~~ [[Prometheus#What are Labels|ans]]
     
-- Time series
+- ~~Time series~~ 
     
-- Why Prometheus PULLS instead of pushes
+- ~~Why Prometheus PULLS instead of pushes~~ 
     
+
 
 ### 🛠️ Tasks:
 
-1. Run Prometheus locally:
+1. ~~Run Prometheus locally:
     
     ```
     docker run -p 9090:9090 prom/prometheus
     ```
     
-2. Open `localhost:9090`
+2. ~~Open `localhost:9090`
     
-3. Try basic queries:
+3. ~~Try basic queries:
     
     - `up`
         
