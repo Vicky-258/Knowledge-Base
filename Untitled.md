@@ -1,8 +1,8 @@
-# 📌 **WEEK 1: Docker Fundamentals + ML App Containerization**
+# **WEEK 1: Docker Fundamentals + ML App Containerization**
 
-### 🎯 Weekly Goal:
+### Weekly Goal:
 
-By the end of Week 1, you should be able to:
+By the end of Week 1, I should be able to:
 
 - Understand how containers work
     
@@ -13,30 +13,28 @@ By the end of Week 1, you should be able to:
 - Containerize a simple FastAPI ML model
     
 
-### 🔥 Daily-Style Nudges:
+###  Daily-Style Nudges:
 
-- **Day 1:** Install Docker + run hello-world container
+- ~~**Day 1:** Install Docker + run hello-world container
     
-- **Day 2:** Understand images, layers, containers
+- ~~**Day 2:** Understand images, layers, containers
     
-- **Day 3:** Write your first Dockerfile for a simple Python script
+- ~~**Day 3:** Write your first Dockerfile for a simple Python script
     
-- **Day 4:** Containerize a basic FastAPI “hello” app
+- ~~**Day 4:** Containerize a basic FastAPI “hello” app
     
-- **Day 5:** Add a simple ML model (sklearn) into FastAPI
+- ~~**Day 5:** Add a simple ML model (sklearn) into FastAPI
     
-- **Day 6:** Build → tag → run → publish image to DockerHub
+- ~~**Day 6:** Build → tag → run → publish image to DockerHub
     
-- **Day 7:** Mini project: Deploy image on your system as a service
+- ~~**Day 7:** Mini project: Deploy image on your system as a service
     
-
-You’ll feel like a wizard by the end of this week.
 
 ---
 
-# 📌 **WEEK 2: Production FastAPI + CI/CD (GitHub Actions)**
+#  **WEEK 2: Production FastAPI + CI/CD (GitHub Actions)**
 
-### 🎯 Weekly Goal:
+###  Weekly Goal:
 
 - Learn production-style FastAPI
     
@@ -45,9 +43,9 @@ You’ll feel like a wizard by the end of this week.
 - Build a CI/CD pipeline to auto-deploy
     
 
-### 🔥 Daily-Style Nudges:
+###  Daily-Style Nudges:
 
-- **Day 8:** Folder structuring for production
+- ~~**Day 8:** Folder structuring for production
     
 - **Day 9:** Logging, custom exceptions, environment variables
     
@@ -61,23 +59,22 @@ You’ll feel like a wizard by the end of this week.
     
 - **Day 14:** Mini project: Production-ready FastAPI ML service
     
-
-This is the week others start noticing your growth.
-
 ---
 
-# 📌 **WEEK 3: AWS Deployment + ECS + ECR**
 
-### 🎯 Weekly Goal:
 
-Deploy your Dockerized ML service to AWS using:
+#  **WEEK 3: AWS Deployment + ECS + ECR**
+
+###  Weekly Goal:
+
+Deploy my Dockerized ML service to AWS using:
 
 - AWS ECR (Docker registry)
     
 - AWS ECS Fargate (serverless container running)
     
 
-### 🔥 Daily-Style Nudges:
+###  Daily-Style Nudges:
 
 - **Day 15:** Create AWS account + IAM roles
     
@@ -94,13 +91,11 @@ Deploy your Dockerized ML service to AWS using:
 - **Day 21:** Mini project: Your first AWS-deployed ML API
     
 
-This is MASSIVE real-world skill. Recruiters love this.
-
 ---
 
-# 📌 **WEEK 4: Monitoring + Logging + Model Versioning**
+#  **WEEK 4: Monitoring + Logging + Model Versioning**
 
-### 🎯 Weekly Goal:
+###  Weekly Goal:
 
 - Learn how to observe production ML services
     
@@ -109,7 +104,7 @@ This is MASSIVE real-world skill. Recruiters love this.
 - Add API metrics dashboards
     
 
-### 🔥 Daily-Style Nudges:
+###  Daily-Style Nudges:
 
 - **Day 22:** Structured logging + CloudWatch integration
     
@@ -124,15 +119,12 @@ This is MASSIVE real-world skill. Recruiters love this.
 - **Day 27:** Canary deployment concept
     
 - **Day 28:** Mini project: v1/v2 model switcher
-    
-
-Now you're entering proper MLOps territory.
 
 ---
 
-# 📌 **WEEK 5: Intro to Kubernetes + Deploying ML on K8s**
+#  **WEEK 5: Intro to Kubernetes + Deploying ML on K8s**
 
-### 🎯 Weekly Goal:
+### Weekly Goal:
 
 - Understand Kubernetes from zero
     
@@ -141,7 +133,7 @@ Now you're entering proper MLOps territory.
 - Learn scaling, pods, services
     
 
-### 🔥 Daily-Style Nudges:
+###  Daily-Style Nudges:
 
 - **Day 29:** Pods, deployments, services
     
@@ -156,15 +148,13 @@ Now you're entering proper MLOps territory.
 - **Day 34:** Logging in k8s
     
 - **Day 35:** Your first k8s mini project
-    
 
-Congrats — you’ll now understand the backbone of modern ML infra.
 
 ---
 
-# 📌 **WEEK 6: Final Week — Full MLOps Infra Project**
+#  **WEEK 6: Final Week — Full MLOps Infra Project**
 
-### 🎯 Weekly Goal:
+###  Weekly Goal:
 
 Build a **full end-to-end MLOps project**:
 
@@ -185,7 +175,7 @@ Build a **full end-to-end MLOps project**:
 - Optionally on k8s
     
 
-### 🔥 Daily-Style Nudges:
+###  Daily-Style Nudges:
 
 - **Day 36:** Project setup + API + Docker
     
@@ -194,8 +184,5 @@ Build a **full end-to-end MLOps project**:
 - **Day 38:** Deployment + Monitoring
     
 - **Day 39:** Documentation + GitHub polish + Video demo
-    
-
-This becomes **your flagship project for placements**.
 
 ---

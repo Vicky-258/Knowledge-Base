@@ -11,33 +11,33 @@ Because BAScaler’s first component is the **Informer model**.
 
 You need to understand:
 
-- Time series basics
+- ~~Time series basics
     
-- Windowing, sliding windows
+- ~~Windowing, sliding windows
     
-- Seasonal patterns
+- ~~Seasonal patterns
     
-- Autocorrelation
+- ~~Autocorrelation
     
-- Train/Test split for sequential data
+- ~~Train/Test split for sequential data
     
 
 **Algorithms to learn:**
 
-- AR / ARIMA (lightweight burst handler uses AR(2))
+- ~~AR / ARIMA (lightweight burst handler uses AR(2))
     
-- LSTM / GRU
+- ~~LSTM / GRU
     
-- Transformers for time series
+- ~~Transformers for time series
     
-- Informer (bonus: but can be replaced in MVP)
+- ~~Informer (bonus: but can be replaced in MVP)
     
 
 **Practicals:**
 
-- Building forecasting pipelines
+- ~~Building forecasting pipelines
     
-- Predicting intervals (min/median/max)
+- ~~Predicting intervals (min/median/max)
     
 
 ---
