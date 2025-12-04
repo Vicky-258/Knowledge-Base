@@ -18,7 +18,7 @@ Understand HOW Prometheus thinks and get comfy with its UI.
     
 - ~~Labels~~ [[Prometheus#What are Labels|ans]]
     
-- ~~Time series~~ 
+- ~~Time series~~ [[Prometheus#Time series]ans]
     
 - ~~Why Prometheus PULLS instead of pushes~~ 
     
@@ -57,7 +57,7 @@ Understand container-level metrics: CPU, memory, IO, network.
 
 ### 🛠️ Tasks:
 
-1. Run cAdvisor:
+1. ~~Run cAdvisor:~~ 
     
     ```
     docker run \
@@ -69,26 +69,26 @@ Understand container-level metrics: CPU, memory, IO, network.
       gcr.io/cadvisor/cadvisor
     ```
     
-2. Visit `localhost:8080`
+1. ~~Visit `localhost:8080`~~ 
     
-3. Explore:
+2. ~~Explore:
     
-    - CPU throttling
+    - ~~CPU throttling
         
-    - Memory working set
+    - ~~Memory working set
         
-    - Filesystem usage
+    - ~~Filesystem usage
         
-    - Network bytes
+    - ~~Network bytes
         
-4. In Prometheus:  
+3. ~~In Prometheus:  ~~
     Query:
     
-    - `container_cpu_usage_seconds_total`
+    ~~- `container_cpu_usage_seconds_total`~~
         
-    - `container_memory_working_set_bytes`
+    ~~- `container_memory_working_set_bytes`~~
         
-    - `rate(container_network_transmit_bytes_total[1m])`
+    ~~- `rate(container_network_transmit_bytes_total[1m])`~~
         
 
 ### 🎉 End of Day Win:
