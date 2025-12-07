@@ -11,17 +11,17 @@ Goal of the week → Load dataset → Clean → Train 2 baselines → Compare �
 ---
 
 ## 📅 Day 1 — Dataset Setup
-- [ ] Download Propaganda dataset (SemEval / NLP4IF)
-- [ ] Create project folders (data/raw, data/processed, notebooks, src)
-- [ ] Place dataset into `data/raw/`
-- [ ] Inspect dataset in a notebook (columns, labeling, distribution)
+- [x] Download Propaganda dataset (SemEval / NLP4IF)
+- [x] Create project folders (data/raw, data/processed, notebooks, src)
+- [x] Place dataset into `data/raw/`
+- [x] Inspect dataset in a notebook (columns, labeling, distribution)
 
 ---
 
 ## 📅 Day 2 — Light Data Cleaning
-- [ ] Text cleaning (lowercase, remove URLs/HTML, normalize spaces)
-- [ ] Label cleaning
-- [ ] Save cleaned dataset into `data/processed/`
+- [x] Text cleaning (lowercase, remove URLs/HTML, normalize spaces)
+- [x] Label cleaning
+- [x] Save cleaned dataset into `data/processed/`
 
 ---
 

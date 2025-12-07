@@ -107,22 +107,22 @@ Make your own service that exposes real metrics.
 
 Create FastAPI server with:
 
-- Counter
+- ~~Counter
     
-- Histogram
+- ~~Histogram
     
-- `/metrics` endpoint
+- ~~`/metrics` endpoint
     
 
 Code (you’ll write it line-by-line—you prefer that 😎 but here's the plan):
 
-1. Counter: `demo_requests_total`
+1. ~~Counter: `demo_requests_total`
     
-2. Latency histogram: `demo_request_latency_seconds`
+2. ~~Latency histogram: `demo_request_latency_seconds`
     
-3. Add random sleep to simulate real latency
+3. ~~Add random sleep to simulate real latency
     
-4. Expose `/metrics`
+4. ~~Expose `/metrics`
     
 
 Run:

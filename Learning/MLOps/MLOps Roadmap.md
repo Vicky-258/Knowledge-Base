@@ -47,9 +47,9 @@ By the end of Week 1, I should be able to:
 
 - ~~**Day 8:** Folder structuring for production
     
-- **Day 9:** Logging, custom exceptions, environment variables
+- ~~**Day 9:** Logging, custom exceptions, environment variables~~ 
     
-- **Day 10:** Create a FastAPI ML inference endpoint
+- ~~**Day 10:** Create a FastAPI ML inference endpoint~~ 
     
 - **Day 11:** Write tests with pytest
     
