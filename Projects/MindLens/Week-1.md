@@ -26,50 +26,49 @@ Goal of the week → Load dataset → Clean → Train 2 baselines → Compare �
 ---
 
 ## 📅 Day 3 — Baseline Model #1 (TF-IDF + Logistic Regression)
-- [ ] Vectorize text using TF-IDF
-- [ ] Train logistic regression classifier
-- [ ] Evaluate performance (accuracy, precision, recall, F1)
-- [ ] Export confusion matrix
+- [x] Vectorize text using TF-IDF
+- [x] Train logistic regression classifier
+- [x] Evaluate performance (accuracy, precision, recall, F1)
+- [x] Export confusion matrix
 
 ---
 
 ## 📅 Day 4 — Baseline Model #2 (DistilBERT)
-- [ ] Tokenize dataset using HF tokenizer
-- [ ] Fine-tune DistilBERT on the dataset
-- [ ] Evaluate using same metrics as Day 3
-- [ ] Save results screenshot or table
+- [x] Tokenize dataset using HF tokenizer
+- [x] Fine-tune DistilBERT on the dataset
+- [x] Evaluate using same metrics as Day 3
+- [x] Save results screenshot or table
 
 ---
 
 ## 📅 Day 5 — Comparison & Insights
 - [ ] Compare results of Model 1 vs Model 2
 - [ ] Analyze 3 types of errors:
-  - confident wrong
-  - confused predictions
-  - borderline cases
+  - severe class imbalance
+  - article-level labels too coarse
+  - fewer negative samples
 - [ ] Write insights in a notebook or NOTES.md
 
 ---
 
 ## 📅 Day 6 — Documentation Day
-- [ ] Update README.md with:
-  - project summary
-  - dataset source
-  - baseline results table
-  - folder structure
-- [ ] Add confusion matrix / results images (optional but good)
+- [ ] Implement class-weighted cross entropy
+- [ ] Compare to Day 4 results
+- [ ] Document differences
 
 ---
 
 ## 📅 Day 7 — Reflection (No Code Day)
-- [ ] Review insights and failure patterns
-- [ ] Brainstorm targeted new dataset samples for Week 2
+- [ ] No coding
+- [ ] Write a short Week 1 reflection
+- [ ] Plan Week 2 goals (BIO tagging + NER prep)
 - [ ] Chill (mandatory 🙂)
 
 ---
 
 ### 🏁 End-of-Week Checklist
-- [ ] Both baselines executed and recorded
-- [ ] README updated
-- [ ] NOTES.md (or notebook) includes error patterns and ideas
-- [ ] No burnout 🤝
+- [x] Project structure = ready
+- [x] Dataset = parsed and cleaned
+- [ ] Baseline models = implemented
+- [ ] Clear understanding of dataset weaknesses
+- [ ] Prepared for **Week 2: BIO tagging dataset construction**

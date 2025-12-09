@@ -1,121 +1,210 @@
-# 🧠 MindLens — The 3-Month End-to-End Roadmap
+# 🧠 MindLens — Updated 4‑Month Roadmap (Complete Manipulation Detection Ecosystem)
 
-### _(Big-picture: Research → Pipeline → Deployment → Monitoring → Demo)_
+This is the expanded and explicit roadmap for building **MindLens**, not just as a propaganda span detector but as a **complete manipulation‑detection ecosystem**.
 
-Each week has:
+We extend the plan from 3 months → **4 months**, because the original vision includes multiple modules:
 
-- **primary goal**
+- Propaganda span detection (NER)
     
-- **secondary tasks**
+- Emotional manipulation / sentiment analysis
     
-- workload sized to avoid burnout while you're also doing Autoscale**
+- Clickbait detection
     
+- Bias & framing analysis
+    
+- Statistical manipulation & source vagueness
+    
+- Unified Truth Lens scoring system
+    
+
+This expanded plan reflects realistic engineering pace while maintaining high quality.
 
 ---
 
-# 🔥 **MONTH 1 — The Research Era**
+# 🔥 MONTH 1 — Core Modeling: Propaganda Span Detection (NER)
 
-Goal: Build a strong model foundation BEFORE touching MLOps.
-
----
-
-## **📅 WEEK 1 — Dataset + Baselines (we already planned)**
-
-**Goal:** Make the project _real and working_ quickly
-
-- Download propaganda dataset
-    
-- Clean + preprocess
-    
-- Baseline TF-IDF model
-    
-- Baseline DistilBERT model
-    
-- Compare + insights
-    
-- Update README  
-    (You already have this plan.)
-    
+Goal: Build a research‑grade **BIO‑tagged technique‑aware span detection model**.
 
 ---
 
-## **📅 WEEK 2 — Deep Error Analysis + Custom Trait Mapping**
+## 📅 WEEK 1 — Dataset + Baselines (Already Done)
 
-**Goal:** Understand _WHY_ the model fails  
+**Goal:** Establish a working foundation.
+
+- Download, extract, and parse SemEval dataset
+    
+- Merge article + span + technique labels
+    
+- Save raw dataset → `data/raw/`
+    
+- Clean text & validate spans → `data/processed/`
+    
+- Build baseline TF‑IDF model (binary classification)
+    
+- Build baseline DistilBERT model (binary)
+    
+- Evaluate & record weaknesses
+    
+
+**Outcome:** Foundation is complete.
+
+---
+
+## 📅 WEEK 2 — BIO Tagging Dataset Construction
+
+**Goal:** Prepare the TRUE dataset needed for span detection.
+
 Tasks:
 
-- Class-wise error breakdown
+- Tokenize articles with DistilBERT tokenizer
     
-- Patterns in misclassifications
+- Convert spans + techniques → **BIO tags**
     
-- Map these errors to your trait taxonomy  
-    (clickbait, emotional language, framing, etc.)
+- Choose strategy for overlapping spans
     
-- Identify which traits need extra curated samples
+- Create label vocabulary for all techniques
     
-- Begin writing curated dataset criteria
+- Verify token‑to‑span alignment
     
-
-**Outcome:**  
-You discover EXACTLY what curated data you'll collect.
-
----
-
-## **📅 WEEK 3 — Curated Dataset Creation (Mini Version)**
-
-**Goal:** Start giving the model “Vicky’s brain.”  
-Tasks:
-
-- Collect 150–300 curated samples
+- Save dataset → `data/processed/span_ner.jsonl`
     
-- Manually label them
-    
-- Mix them with public dataset
-    
-- Retrain baselines
-    
-- Document improvements
+- Document dataset stats
     
 
-**Outcome:**  
-Your dataset becomes **unique**, not recycled.
+**Outcome:** NER‑ready dataset.
 
 ---
 
-## **📅 WEEK 4 — Better Models (Light Experiments)**
+## 📅 WEEK 3 — Train DistilBERT NER (Technique‑Aware)
 
-**Goal:** Build a _practical final model_ to deploy  
+**Goal:** Train the first real propaganda span detector.
+
 Tasks:
 
-- Try 1–2 better architectures:
+- Build `PropagandaNERDataset`
     
-    - RoBERTa-base
+- Train `DistilBertForTokenClassification`
+    
+- Handle imbalance with class weights
+    
+- Use linear warmup scheduler
+    
+- Evaluate:
+    
+    - token‑level accuracy
         
-    - DeBERTa-base
+    - span‑level F1
         
-- Add simple heuristics (e.g., passive voice detector, sentiment score)
+    - technique‑level F1
+        
+- Visualize predicted spans
     
-- Evaluate and pick the “Version 1 Production Model”
+
+**Outcome:** MindLens Span Detector v1.0.
+
+---
+
+## 📅 WEEK 4 — Model Upgrades + Deep Error Analysis
+
+**Goal:** Improve the model with stronger architectures.
+
+Tasks:
+
+- Train RoBERTa‑base NER
+    
+- Train DeBERTa‑base NER
+    
+- Compare all models
+    
+- Analyze technique confusions
+    
+- Identify missing traits for curated dataset
+    
+- Select production candidate
     
 
-**Outcome:**  
-You now have your **first official deployable model**.
+**Outcome:** Finalize MindLens Propaganda NER Model v1.0.
 
 ---
 
----
+# ⚙️ MONTH 2 — Expanding Capabilities (Manipulation Modules)
 
-# ⚙️ **MONTH 2 — The Pipeline Era**
-
-Goal: Turn your project from **notebook → real ML system**.
-
-This is where MindLens starts looking like a **production-grade** project.
+Goal: Extend MindLens beyond propaganda → full manipulation detection ecosystem.
 
 ---
 
-## **📅 WEEK 5 — Pipeline Foundation**
+## 📅 WEEK 5 — Emotional Manipulation & Sentiment Module
 
-**Goal:** Replace notebooks with clean scripts  
+Tasks:
+
+- Build sentiment classifier (fear, anger, joy, sadness)
+    
+- Add emotional‑language detector
+    
+- Highlight emotionally charged spans
+    
+- Combine emotional scores with NER output
+    
+
+**Outcome:** Emotional manipulation detection module.
+
+---
+
+## 📅 WEEK 6 — Clickbait & Headline Manipulation Module
+
+Tasks:
+
+- Build rule‑based + ML clickbait classifier
+    
+- Detect exaggeration, sensationalism, withholding info
+    
+- Integrate with article headline pipeline
+    
+
+**Outcome:** Clickbait detection module.
+
+---
+
+## 📅 WEEK 7 — Bias & Framing Analysis Module
+
+Tasks:
+
+- Implement framing detection (positive/negative stance)
+    
+- Entity‑level sentiment
+    
+- Subjectivity scoring
+    
+- Detect ideological framing
+    
+
+**Outcome:** Bias/framing module.
+
+---
+
+## 📅 WEEK 8 — Statistical Manipulation & Source Vagueness Module
+
+Tasks:
+
+- Detect vague sources ("experts say", "research shows")
+    
+- Highlight statistical manipulation ("up to 300%", "study proves…")
+    
+- Combine rule‑based + transformer classifier
+    
+
+**Outcome:** Advanced manipulation module.
+
+---
+
+# 🏗️ MONTH 3 — Pipeline & MLOps Foundations
+
+Goal: Convert models → modular, maintainable ML system.
+
+---
+
+## 📅 WEEK 9 — Pipeline Foundation
+
 Tasks:
 
 - Create `src/` structure:
@@ -124,231 +213,186 @@ Tasks:
         
     - `preprocess.py`
         
-    - `train.py`
+    - `ner_dataset_builder.py`
         
-    - `evaluate.py`
+    - `emotion_module.py`
         
-- Move preprocessing from notebook → Python module
+    - `clickbait_module.py`
+        
+    - `bias_module.py`
+        
+    - `stats_module.py`
+        
+    - `train_ner.py`
+        
+    - `evaluate_ner.py`
+        
+- Add `config.yaml`
     
-- Add config file (`config.yaml`)
+- Convert notebooks → proper modules
     
 
-**Outcome:**  
-You're now writing **real ML code**, not Kaggle scripts.
+**Outcome:** Maintainable ML architecture.
 
 ---
 
-## **📅 WEEK 6 — MLflow Integration**
+## 📅 WEEK 10 — MLflow Integration
 
-**Goal:** Add experiment tracking like a real MLOps engineer  
 Tasks:
 
-- Integrate MLflow
+- Track experiments (NER + other modules)
     
-- Log:
+- Log metrics, artifacts, confusion matrices
     
-    - hyperparameters
-        
-    - metrics
-        
-    - confusion matrix
-        
-    - model artifacts
-        
-- Track multiple model versions
-    
-- Pick the _best_ model using MLflow UI
+- Manage multiple model versions
     
 
-**Outcome:**  
-You officially cross the line from “ML student” → **MLOps engineer**.
+**Outcome:** Full experiment tracking.
 
 ---
 
-## **📅 WEEK 7 — Model Registry + Versioning**
+## 📅 WEEK 11 — Model Registry + Versioning
 
-**Goal:** Treat models like software releases  
 Tasks:
 
-- Use MLflow Model Registry
+- Register NER + sentiment + clickbait models
     
-- Register:
+- Semantic versioning
     
-    - baseline models
-        
-    - curated-data version
-        
-    - final version
-        
-- Add semantic versioning (v1.0, v1.1, etc.)
-    
-- Write a script that loads model **from registry**, not file.
+- Add loader that fetches model from registry
     
 
-**Outcome:**  
-Your ML system becomes **plug-and-play**.
+**Outcome:** Real model lifecycle system.
 
 ---
 
-## **📅 WEEK 8 — Inference Service (API Layer)**
+## 📅 WEEK 12 — Inference API (FastAPI)
 
-**Goal:** Deploy a real inference service**  
 Tasks:
 
-- Build inference API (FastAPI preferred)
+- Unified `/analyze` endpoint
     
-- Endpoint: `/analyze`
+- Output:
     
-- Includes:
-    
-    - text cleansing
+    - spans + techniques
         
-    - trait output
+    - emotional analysis
         
-    - confidence scores
+    - clickbait score
         
-- Serve the model FROM registry
-    
-- Add logging (prediction logs)
+    - bias/framing cues
+        
+    - vague/statistical manipulation flags
+        
+    - final Truth Score
+        
+- Add structured logging
     
 
-**Outcome:**  
-Your model becomes **an API product**.
+**Outcome:** MindLens becomes a real multi‑module inference API.
 
 ---
 
----
+# 📡 MONTH 4 — Deployment, Monitoring, Feedback Loop, UI
 
-# 📡 **MONTH 3 — The Ops Era (Deployment, Monitoring, Demo)**
-
-Goal: Make MindLens look **like a startup-level ML system.**
+Goal: Productionize MindLens and build an impressive demonstration.
 
 ---
 
-## **📅 WEEK 9 — Containerization**
+## 📅 WEEK 13 — Containerization (Docker)
 
-**Goal:** Dockerize everything  
 Tasks:
 
-- Dockerfile for:
+- Dockerfiles for training + inference
     
-    - training pipeline
-        
-    - inference API
-        
 - Docker Compose for local simulation
     
-- Test on your machine
+- Multi‑module serving environment
     
 
-**Outcome:**  
-Your project now looks like something that runs at a company.
+**Outcome:** Containerized, deployable system.
 
 ---
 
-## **📅 WEEK 10 — Monitoring + Logging**
+## 📅 WEEK 14 — Monitoring + Observability
 
-**Goal:** Add observability (the thing real MLOps engineers MUST know)  
 Tasks:
 
-- Add:
-    
-    - Prometheus metrics
-        
-    - Logging (structured logs)
-        
-- Metrics to expose:
+- Prometheus metrics:
     
     - request count
         
-    - average latency
+    - latency
         
     - errors
         
-    - trait distribution in predictions
+    - technique distribution
         
-- Add a mini Grafana dashboard (optional but sexy)
+- Optional Grafana dashboard
+    
+- Structured logs for each module
     
 
-**Outcome:**  
-Your inference pipeline becomes **transparent and monitorable**.
+**Outcome:** Fully observable ML system.
 
 ---
 
-## **📅 WEEK 11 — Human Feedback Loop**
+## 📅 WEEK 15 — Human Feedback Loop
 
-**Goal:** Make the system improve over time  
 Tasks:
 
-- Add “feedback” API:
+- `/feedback` endpoint
     
-    - `/feedback`
-        
-- Store:
+- Store corrected spans, sentiments, bias labels
     
-    - user-corrected trait labels
-        
-- Append to curated dataset
+- Build `retrain.py` to incorporate feedback
     
-- Write a script `retrain.py` that:
+- Push new versions to registry
     
-    - pulls new labels
-        
-    - retrains model
-        
-    - logs new version to registry
-        
 
-**Outcome:**  
-Your system becomes semi-autonomous — **true MLOps energy.**
+**Outcome:** MindLens becomes self‑improving.
 
 ---
 
-## **📅 WEEK 12 — Final Polish + Demo Build**
+## 📅 WEEK 16 — Final Polish + Demo
 
-**Goal:** Turn MindLens into a jaw-dropping portfolio piece  
 Tasks:
 
-- Build a polished README (architecture + visuals)
+- Clean README
     
-- Add architecture diagram
+- Architecture diagram
     
-- Add before/after model improvements table
+- Comparison charts (baseline → final)
     
-- Add screenshots of MLflow, Grafana
+- Frontend demo notebook or mini UI
     
-- Add simple notebook for demo usage
-    
-- Make a 2–min video demo (if you want)
+- Optional 1–2 minute demo video
     
 
-**Outcome:**  
-MindLens becomes **hire-me-ready**.
+**Final Outcome:**  
+A complete, production‑grade **Manipulation Detection Ecosystem** with:
 
----
+- Propaganda span detection (NER)
+    
+- Emotional manipulation detection
+    
+- Clickbait detection
+    
+- Bias/framing analysis
+    
+- Statistical manipulation detection
+    
+- Unified Truth Score system
+    
+- ML pipeline + MLOps
+    
+- Monitoring + logging
+    
+- Versioning
+    
+- Deployment
+    
+- Feedback loop
+    
 
-# 🧨 Final Deliverable at End of 3 Months
-
-MindLens version 1.0 will be a:
-
-- **dataset pipeline**
-    
-- **preprocessing pipeline**
-    
-- **training pipeline**
-    
-- **MLflow tracked system**
-    
-- **model registry**
-    
-- **inference API**
-    
-- **monitoring dashboard**
-    
-- **feedback loop**
-    
-- **Dockerized solution**
-    
-- **demo notebook**
-    
-- **clean codebase**
+**MindLens v1.0 — The Truth Lens — is born.****
