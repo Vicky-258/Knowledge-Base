@@ -1,0 +1,8 @@
+.obsidian/
+plugins/
+themes/
+workspace
+workspace.json
+*.db
+*.db-wal
+*.db-shm

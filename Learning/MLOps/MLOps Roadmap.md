@@ -51,7 +51,7 @@ By the end of Week 1, I should be able to:
     
 - ~~**Day 10:** Create a FastAPI ML inference endpoint~~ 
     
-- **Day 11:** Write tests with pytest
+- ~~**Day 11:** Write tests with pytest~~
     
 - **Day 12:** CI pipeline: Lint → Test → Build Docker
     

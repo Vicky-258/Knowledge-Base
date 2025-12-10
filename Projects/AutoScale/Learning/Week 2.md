@@ -145,7 +145,7 @@ Connect your API + cAdvisor → Prometheus.
 
 ### 🛠️ Tasks:
 
-Edit Prometheus config:
+~~Edit Prometheus config:~~
 
 ```yaml
 scrape_configs:
@@ -158,15 +158,15 @@ scrape_configs:
       - targets: ["host.docker.internal:8080"]
 ```
 
-Restart Prometheus.
+~~Restart Prometheus.~~
 
 Verify:
 
-- `demo_requests_total`
+- ~~`demo_requests_total`~~
     
-- `rate(demo_requests_total[1m])`
+~~- `rate(demo_requests_total[1m])`~~
     
-- `histogram_quantile(...)`
+~~- `histogram_quantile(...)`~~
     
 
 ### 🎉 End of Day Win:
@@ -192,15 +192,13 @@ Make graphs for:
 
 ### 🛠️ Tasks:
 
-1. Load-test:
+1. ~~Load-test:~~
     
     ```
-    while true; do curl -s localhost:8000 >/dev/null; done
+     while true; do curl -s localhost:8000 >/dev/null; done
     ```
     
-2. In Prometheus graph tab, inspect:
-    
-
+1. ~~In Prometheus graph tab, inspect:~~
 #### 🔥 CPU:
 
 ```
