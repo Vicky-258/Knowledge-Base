@@ -1,4 +1,4 @@
-# 🚀 WEEK 2 — Day-by-Day Plan
+ # 🚀 WEEK 2 — Day-by-Day Plan
 
 _(Monitoring: Prometheus + cAdvisor + Metrics)_
 
@@ -219,8 +219,8 @@ rate(demo_requests_total[1m])
 
 ### 🎉 End of Day Win:
 
-You read CPU, RPS, latency from charts.  
-This is literally what Grafana panels show.
+~~You read CPU, RPS, latency from charts.  
+This is literally what Grafana panels show.~~
 
 ---
 
@@ -232,13 +232,13 @@ Plot metrics together using Prometheus graph or a tiny Python plotting script.
 
 ### 🛠️ Tasks:
 
-- Export metrics using Prometheus HTTP API
+~~- Export metrics using Prometheus HTTP API~~
     
-- Plot using matplotlib
+~~- Plot using matplotlib~~
     
-- OR use Prometheus “graph” tab like a dashboard
+~~- OR use Prometheus “graph” tab like a dashboard~~
     
-- (optional) Use `promlens` to debug PromQL
+~~- (optional) Use `promlens` to debug PromQL~~
     
 
 ### 🎉 End of Day Win:

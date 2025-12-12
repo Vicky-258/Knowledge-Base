@@ -42,12 +42,12 @@ Goal of the week → Load dataset → Clean → Train 2 baselines → Compare �
 ---
 
 ## 📅 Day 5 — Comparison & Insights
-- [ ] Compare results of Model 1 vs Model 2
-- [ ] Analyze 3 types of errors:
+- [x] Compare results of Model 1 vs Model 2
+- [x] Analyze 3 types of errors:
   - severe class imbalance
   - article-level labels too coarse
   - fewer negative samples
-- [ ] Write insights in a notebook or NOTES.md
+- [x] Write insights in a notebook or NOTES.md
 
 ---
 
