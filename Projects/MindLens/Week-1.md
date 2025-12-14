@@ -51,24 +51,24 @@ Goal of the week → Load dataset → Clean → Train 2 baselines → Compare �
 
 ---
 
-## 📅 Day 6 — Documentation Day
-- [ ] Implement class-weighted cross entropy
-- [ ] Compare to Day 4 results
-- [ ] Document differences
+## 📅 Day 6 — Documentation Day - waste
+- [x] Implement class-weighted cross entropy
+- [x] Compare to Day 4 results
+- [x] Document differences
 
 ---
 
 ## 📅 Day 7 — Reflection (No Code Day)
-- [ ] No coding
-- [ ] Write a short Week 1 reflection
-- [ ] Plan Week 2 goals (BIO tagging + NER prep)
-- [ ] Chill (mandatory 🙂)
+- [x] No coding
+- [x] Write a short Week 1 reflection
+- [x] Plan Week 2 goals (BIO tagging + NER prep)
+- [x] Chill (mandatory 🙂)
 
 ---
 
 ### 🏁 End-of-Week Checklist
 - [x] Project structure = ready
 - [x] Dataset = parsed and cleaned
-- [ ] Baseline models = implemented
-- [ ] Clear understanding of dataset weaknesses
-- [ ] Prepared for **Week 2: BIO tagging dataset construction**
+- [x] Baseline models = implemented
+- [x] Clear understanding of dataset weaknesses
+- [x] Prepared for **Week 2: BIO tagging dataset construction**

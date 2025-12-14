@@ -1,0 +1,3 @@
+ - Embedding - they are the representation of the language in the vector space the embedding dims gives the number of dimensions the vector space gonna have.
+ - BPE - This is a technique that groups letters that appears together so many times that can be considered as a single token almost always.
+ - 

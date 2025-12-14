@@ -53,7 +53,7 @@ By the end of Week 1, I should be able to:
     
 - ~~**Day 11:** Write tests with pytest~~
     
-- **Day 12:** CI pipeline: Lint → Test → Build Docker
+~~- **Day 12:** CI pipne: Lint → Test → Build Dockere~~
     
 - **Day 13:** Auto-push Docker images to DockerHub
     
