@@ -42,22 +42,22 @@ Just 20–30 lines of Python.
 
 ### 🎯 Goals:
 
-- Learn how to _collect_ real metrics
+~~- Learn how to _collect_ real metrics~~
     
-- Learn scraping + PromQL
+~~- Learn scraping + PromQL~~
     
-- Understand latency, CPU usage, RPS
+~~- Understand latency, CPU usage, RPS~~
     
 
 ### 📚 Learn:
 
-- Prometheus fundamentals
+~~- Prometheus fundamentals~~
     
-- cAdvisor metrics
+~~- cAdvisor metrics~~
     
-- Pod CPU/Memory over time
+~~- Pod CPU/Memory over time~~
     
-- Request rate / latency collection
+~~- Request rate / latency collection~~
     
 
 ### 🛠️ Mini-Project:

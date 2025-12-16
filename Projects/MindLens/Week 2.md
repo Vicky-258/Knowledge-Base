@@ -10,18 +10,18 @@ This week is about **data correctness, alignment, and decisions**. No rushing. N
 
 **Objective:** Decide *exactly* what the model will predict.
 
-* [ ] List all propaganda techniques present in the dataset
-* [ ] Decide BIO format:
+* [x] List all propaganda techniques present in the dataset
+* [x] Decide BIO format:
 
   `B-<TECHNIQUE>`
    `I-<TECHNIQUE>`
   `O`
-* [ ] Decide overlap handling strategy:
+* [x] Decide overlap handling strategy:
 
-  * [ ] Priority-based (dominant technique wins)
-  * [ ] Merge / drop secondary overlaps (if needed)
-* [ ] Create final label → id mapping
-* [ ] Write down all decisions in NOTES.md
+  * [x] Priority-based (dominant technique wins)
+  * [x] Merge / drop secondary overlaps (if needed)
+* [x] Create final label → id mapping
+* [x] Write down all decisions in NOTES.md
 
 ✅ **Done when:** Label scheme is frozen and unambiguous.
 
