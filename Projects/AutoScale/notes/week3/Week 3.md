@@ -13,14 +13,14 @@ Turn raw metrics into a supervised learning problem.
 ### ✅ Tasks:
 - [x] Choose **one metric** as workload signal (CPU or RPS)
 - [x] Load historical data (from Week 2 scrape)
-- [ ] Normalize the series (MinMax / StandardScaler)
-- [ ] Decide:
-  - [ ] input window size (e.g. 24 or 60)
-  - [ ] prediction horizon = 12
-- [ ] Implement sliding window dataset:
+- [x] Normalize the series (MinMax / StandardScaler)
+- [x] Decide:
+  - [x] input window size (e.g. 24 or 60)
+  - [x] prediction horizon = 12
+- [x] Implement sliding window dataset:
   - X → past `window_size`
   - y → next `12` values
-- [ ] Plot:
+- [x] Plot:
   - raw series
   - one sample window → target
 
@@ -36,13 +36,13 @@ You can clearly explain:
 Get a **minimal LSTM** to learn *anything*.
 
 ### ✅ Tasks:
-- [ ] Implement basic LSTM model:
+- [x] Implement basic LSTM model:
   - input → LSTM → Linear
-- [ ] Start with **single-step prediction**
-- [ ] Choose loss:
-  - [ ] MSE
-- [ ] Train for a few epochs
-- [ ] Plot:
+- [x] Start with **single-step prediction**
+- [x] Choose loss:
+  - [x] MSE
+- [x] Train for a few epochs
+- [x] Plot:
   - predicted vs actual (1-step)
 
 📌 **Rule:**  
@@ -59,14 +59,14 @@ Loss goes down. Predictions are not random noise.
 Predict **12 future steps at once**.
 
 ### ✅ Tasks:
-- [ ] Modify model output → size 12
-- [ ] Update dataset target accordingly
-- [ ] Train multi-step LSTM
-- [ ] Plot:
+- [x] Modify model output → size 12
+- [x] Update dataset target accordingly
+- [x] Train multi-step LSTM
+- [x] Plot:
   - true future vs predicted future (12-step curve)
-- [ ] Measure:
-  - [ ] MSE per horizon
-  - [ ] overall MSE
+- [x] Measure:
+  - [x] MSE per horizon
+  - [x] overall MSE
 
 📌 **Checkpoint:**  
 You can visually see trend continuation (even if imperfect).
@@ -79,14 +79,14 @@ You can visually see trend continuation (even if imperfect).
 Understand *why* GRU sometimes works better.
 
 ### ✅ Tasks:
-- [ ] Replace LSTM with GRU
-- [ ] Keep everything else identical
-- [ ] Train GRU model
-- [ ] Compare:
-  - [ ] convergence speed
-  - [ ] stability
-  - [ ] prediction smoothness
-- [ ] Write short notes:
+- [x] Replace LSTM with GRU
+- [x] Keep everything else identical
+- [x] Train GRU model
+- [x] Compare:
+  - [x] convergence speed
+  - [x] stability
+  - [x] prediction smoothness
+- [x] Write short notes:
   - when GRU felt better
   - when LSTM felt better
 
@@ -101,13 +101,13 @@ You understand this is a **design choice**, not dogma.
 Touch transformers without drowning.
 
 ### ✅ Tasks:
-- [ ] Implement:
+- [x] Implement:
   - positional encoding
   - transformer encoder block
-- [ ] Input shape: (sequence_length, features)
-- [ ] Output → next 12 steps
-- [ ] Train on same dataset
-- [ ] Plot predictions
+- [x] Input shape: (sequence_length, features)
+- [x] Output → next 12 steps
+- [x] Train on same dataset
+- [x] Plot predictions
 
 📌 **Rule:**  
 No Informer. No attention hacks.  
@@ -124,18 +124,18 @@ You *understand* what attention is doing, even if performance is similar.
 Stop celebrating. Start judging.
 
 ### ✅ Tasks:
-- [ ] Compare:
+- [x] Compare:
   - AR (Week 1)
   - LSTM
   - GRU
   - Transformer
-- [ ] Metrics:
-  - [ ] MSE
-  - [ ] MAE
-- [ ] Test on:
+- [x] Metrics:
+  - [x] MSE
+  - [x] MAE
+- [x] Test on:
   - smooth workload
   - bursty workload
-- [ ] Identify:
+- [x] Identify:
   - where each model fails
   - lag vs overshoot behavior
 

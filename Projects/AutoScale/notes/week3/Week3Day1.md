@@ -252,18 +252,3 @@ Most importantly, we now have **confidence** in the data.
 From here onward:
 
 > Any modeling success or failure is _real_, not accidental.
-
----
-
-## Ready for Day 2
-
-Next step:
-
-- LSTM-based forecasting
-    
-- First real predictions
-    
-- Compare predicted vs actual future windows
-    
-
-Foundation is solid. 🚀

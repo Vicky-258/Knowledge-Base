@@ -31,13 +31,13 @@ This week is about **data correctness, alignment, and decisions**. No rushing. N
 
 **Objective:** Understand how text spans map to tokens.
 
-* [ ] Load `DistilBertTokenizerFast`
-* [ ] Tokenize 2–3 sample articles
-* [ ] Inspect `input_ids`
-* [ ] Inspect `offset_mapping`
-* [ ] Manually verify char → token alignment
-* [ ] Identify edge cases (punctuation, quotes, whitespace)
-* [ ] Note alignment pitfalls
+* [x] Load `DistilBertTokenizerFast`
+* [x] Tokenize 2–3 sample articles
+* [x] Inspect `input_ids`
+* [x] Inspect `offset_mapping`
+* [x] Manually verify char → token alignment
+* [x] Identify edge cases (punctuation, quotes, whitespace)
+* [x] Note alignment pitfalls
 
 ✅ **Done when:** You trust the tokenizer mapping.
 
@@ -47,13 +47,13 @@ This week is about **data correctness, alignment, and decisions**. No rushing. N
 
 **Objective:** Implement correct BIO labeling.
 
-* [ ] Initialize all tokens as `O`
-* [ ] Iterate through propaganda spans
-* [ ] Assign `B-TECHNIQUE` to first token in span
-* [ ] Assign `I-TECHNIQUE` to continuation tokens
-* [ ] Handle spans starting/ending mid-token
-* [ ] Apply overlap strategy consistently
-* [ ] Unit-test BIO logic on sample articles
+* [x] Initialize all tokens as `O`
+* [x] Iterate through propaganda spans
+* [x] Assign `B-TECHNIQUE` to first token in span
+* [x] Assign `I-TECHNIQUE` to continuation tokens
+* [x] Handle spans starting/ending mid-token
+* [x] Apply overlap strategy consistently
+* [x] Unit-test BIO logic on sample articles
 
 ✅ **Done when:** BIO tags look correct for samples.
 
@@ -63,18 +63,18 @@ This week is about **data correctness, alignment, and decisions**. No rushing. N
 
 **Objective:** Generate the full dataset.
 
-* [ ] Run BIO tagging on all articles
-* [ ] Store per sample:
+* [x] Run BIO tagging on all articles
+* [x] Store per sample:
 
-  * [ ] `input_ids`
-  * [ ] `attention_mask`
-  * [ ] `labels`
-  * [ ] `article_id`
-* [ ] Save dataset as `data/processed/span_ner.jsonl`
-* [ ] Sanity checks:
+  * [x] `input_ids`
+  * [x] `attention_mask`
+  * [x] `labels`
+  * [x] `article_id`
+* [x] Save dataset as `data/processed/span_ner.jsonl`
+* [x] Sanity checks:
 
-  * [ ] token length == label length
-  * [ ] no invalid label ids
+  * [x] token length == label length
+  * [x] no invalid label ids
 
 ✅ **Done when:** Dataset is saved and passes sanity checks.
 
@@ -84,12 +84,12 @@ This week is about **data correctness, alignment, and decisions**. No rushing. N
 
 **Objective:** Validate dataset quality.
 
-* [ ] Compute label frequency distribution
-* [ ] Count total tokens
-* [ ] Count propaganda vs non‑propaganda tokens
-* [ ] Count tokens per technique
-* [ ] Identify extremely rare techniques
-* [ ] Visually inspect random samples
+* [x] Compute label frequency distribution
+* [x] Count total tokens
+* [x] Count propaganda vs non‑propaganda tokens
+* [x] Count tokens per technique
+* [x] Identify extremely rare techniques
+* [x] Visually inspect random samples
 
 ✅ **Done when:** Dataset stats are documented.
 
@@ -99,10 +99,10 @@ This week is about **data correctness, alignment, and decisions**. No rushing. N
 
 **Objective:** Lock Week 2 work cleanly.
 
-* [ ] Document BIO tagging approach
-* [ ] Document overlap handling strategy
-* [ ] Add dataset stats to NOTES.md / README
-* [ ] Write assumptions & limitations
+* [x] Document BIO tagging approach
+* [x] Document overlap handling strategy
+* [x] Add dataset stats to NOTES.md / README
+* [x] Write assumptions & limitations
 
 ✅ **Done when:** Someone else could reproduce Week 2.
 
@@ -112,11 +112,11 @@ This week is about **data correctness, alignment, and decisions**. No rushing. N
 
 **Objective:** Prepare for Week 3 (NER training).
 
-* [ ] Reflect on BIO tagging challenges
-* [ ] Note tricky edge cases
-* [ ] List fixes/improvements for training
-* [ ] Plan Week 3 tasks
-* [ ] Chill (mandatory 😌)
+* [x] Reflect on BIO tagging challenges
+* [x] Note tricky edge cases
+* [x] List fixes/improvements for training
+* [x] Plan Week 3 tasks
+* [x] Chill (mandatory 😌)
 
 ✅ **Done when:** You feel mentally ready for training.
 
@@ -124,9 +124,9 @@ This week is about **data correctness, alignment, and decisions**. No rushing. N
 
 ## 🎯 End of Week 2 Deliverables
 
-* [ ] `span_ner.jsonl` dataset
-* [ ] Label vocabulary (label → id)
-* [ ] Dataset statistics summary
-* [ ] Clear documentation
+* [x] `span_ner.jsonl` dataset
+* [x] Label vocabulary (label → id)
+* [x] Dataset statistics summary
+* [x] Clear documentation
 
 🔥 **Week 3 = Teach the model to see manipulation.**
